@@ -1,3 +1,7 @@
+//Maximum Occuring Element in a String(Approach 1 -> Brute Force)
+// Time Comp O(n^2)
+//Space Comp O(1)
+
 class Main
 {
   public static void main(String[]args)
