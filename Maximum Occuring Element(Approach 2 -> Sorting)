@@ -25,7 +25,7 @@ public class Main
            ++i;
  
      }
-        //Not >=, since in case of >=, it will give the last max. occuring element
+        //Not >= since in case of >= it will give the last max. occuring element and not first
         if(cur_count>max_count)
              {
                  max_count=cur_count;
