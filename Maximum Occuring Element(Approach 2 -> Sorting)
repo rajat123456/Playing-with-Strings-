@@ -25,8 +25,8 @@ public class Main
            ++i;
  
      }
-        
-        if(cur_count>=max_count)
+        //Not >=, since in case of >=, it will give the last max. occuring element
+        if(cur_count>max_count)
              {
                  max_count=cur_count;
                  max_char=arr[i];
