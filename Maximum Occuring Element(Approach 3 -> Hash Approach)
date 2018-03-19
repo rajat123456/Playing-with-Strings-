@@ -1,0 +1,31 @@
+//Maximum Occuring Element in a String(Approach 3 -> Hash Approach)
+//Time Comp O(n)
+//Space Comp O(1) Since Hash Size is Constant (256) irrespective of Input String
+
+import java.util.*;
+public class Main
+{
+  public static void main(String[]args)
+   {
+     String s="RAJAT RAWAT";
+     char result=' ';
+     int max=-1;
+     int[]arr=new int[256];
+     
+     for(int i=0;i<s.length();i++)
+       {
+          arr[s.charAt(i)]++;          
+       }
+       
+       for(int q=0;q<s.length();q++)
+          {
+              if(max<arr[s.charAt(q)])
+              {
+                  max=arr[s.charAt(q)];
+                  result=s.charAt(q);
+              }
+          }
+     System.out.println(max);
+     System.out.println(result);
+   }
+}
