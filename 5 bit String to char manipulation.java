@@ -15,7 +15,7 @@ public class Main
         for(int q=0;q<s.length();q++)
         {
           int val=convertStrtoBits(s.charAt(q));
-          System.out.println(val+"-> ");
+          //System.out.println(val+"-> ");
           long ans=convertDecToBin(val);
           
           if (val==0||val==1)
